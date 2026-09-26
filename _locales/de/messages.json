@@ -1,0 +1,147 @@
+{
+  "langCode": {
+    "message": "de",
+    "description": "The language of this bundle. Card dates and legal forms follow it."
+  },
+  "appName": {
+    "message": "Handelsregister Schweiz – UID & Firmensuche"
+  },
+  "appShortName": {
+    "message": "UID & Firmensuche"
+  },
+  "appDescription": {
+    "message": "Firmen im Handelsregister per UID-Nummer oder Name finden: Status, Rechtsform, Kanton und letzte SHAB-Publikation. Von Prospex."
+  },
+  "actionTitle": {
+    "message": "Im Handelsregister suchen"
+  },
+  "contextMenuTitle": {
+    "message": "„%s“ im Handelsregister nachschlagen"
+  },
+  "popupTitle": {
+    "message": "Handelsregister Schweiz"
+  },
+  "cardHeading": {
+    "message": "Handelsregister Schweiz"
+  },
+  "searchPlaceholder": {
+    "message": "Firmenname oder UID (CHE-123.456.789)"
+  },
+  "searchHint": {
+    "message": "Mindestens 3 Zeichen eingeben oder eine UID einfügen."
+  },
+  "loading": {
+    "message": "Handelsregister wird abgefragt…"
+  },
+  "errorRegister": {
+    "message": "Das Register hat nicht geantwortet. Bitte gleich nochmals versuchen."
+  },
+  "noResults": {
+    "message": "Keine passende Firma im Handelsregister."
+  },
+  "notFoundUid": {
+    "message": "Diese UID ist nicht im Handelsregister eingetragen. Sie kann zu einer Einheit gehören, die nur im UID-Register geführt wird (kleine Einzelunternehmen, Vereine, öffentliche Stellen)."
+  },
+  "moreResults": {
+    "message": "Weitere Firmen passen. Ein Wort oder den Ort ergänzen, um einzugrenzen."
+  },
+  "backToResults": {
+    "message": "Zurück zu den Treffern"
+  },
+  "statusActive": {
+    "message": "Aktiv"
+  },
+  "statusLiquidation": {
+    "message": "In Liquidation"
+  },
+  "statusDeleted": {
+    "message": "Gelöscht"
+  },
+  "labelLegalForm": {
+    "message": "Rechtsform"
+  },
+  "labelSeat": {
+    "message": "Sitz"
+  },
+  "labelDeleted": {
+    "message": "Gelöscht am"
+  },
+  "labelLatestPublication": {
+    "message": "Letzte SHAB-Publikation"
+  },
+  "linkProspex": {
+    "message": "Vollständiges Profil auf Prospex"
+  },
+  "linkExcerpt": {
+    "message": "Kantonaler Handelsregisterauszug"
+  },
+  "copyUid": {
+    "message": "UID kopieren"
+  },
+  "copied": {
+    "message": "Kopiert"
+  },
+  "close": {
+    "message": "Schliessen"
+  },
+  "dataSource": {
+    "message": "Daten aus Zefix und SHAB. Diese Karte ist kein amtlicher Handelsregisterauszug."
+  },
+  "highlightToggle": {
+    "message": "UIDs auf Webseiten unterstreichen und beim Überfahren die Karte zeigen"
+  },
+  "footerBrand": {
+    "message": "Schweizer Firmendaten von Prospex"
+  },
+  "mut_status": {
+    "message": "Handelsregistermutation"
+  },
+  "mut_status_neu": {
+    "message": "Neueintragung"
+  },
+  "mut_status_aufl": {
+    "message": "Auflösung"
+  },
+  "mut_status_aufl_liq": {
+    "message": "Liquidation"
+  },
+  "mut_status_aufl_konk": {
+    "message": "Konkurs"
+  },
+  "mut_status_wiederrufliq": {
+    "message": "Widerruf der Auflösung"
+  },
+  "mut_status_loeschung": {
+    "message": "Löschung"
+  },
+  "mut_firmenaenderung": {
+    "message": "Firmenänderung"
+  },
+  "mut_zweckaenderung": {
+    "message": "Zweckänderung"
+  },
+  "mut_kapitalaenderung": {
+    "message": "Kapitaländerung"
+  },
+  "mut_adressaenderung": {
+    "message": "Adressänderung"
+  },
+  "mut_aenderungorgane": {
+    "message": "Änderung der Organe"
+  },
+  "mut_aenderunguid": {
+    "message": "UID-Änderung"
+  },
+  "mut_fusion": {
+    "message": "Fusion"
+  },
+  "mut_spaltung": {
+    "message": "Spaltung"
+  },
+  "mut_vermoegenstransfer": {
+    "message": "Vermögensübertragung"
+  },
+  "mut_aenderungkapitalband": {
+    "message": "Änderung des Kapitalbands"
+  }
+}

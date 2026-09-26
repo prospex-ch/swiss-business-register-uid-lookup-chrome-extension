@@ -1,0 +1,147 @@
+{
+  "langCode": {
+    "message": "it",
+    "description": "The language of this bundle. Card dates and legal forms follow it."
+  },
+  "appName": {
+    "message": "Registro di commercio svizzero – Numero IDI"
+  },
+  "appShortName": {
+    "message": "Numero IDI"
+  },
+  "appDescription": {
+    "message": "Trova un'azienda svizzera per numero IDI o per nome: stato, forma giuridica, cantone e ultima pubblicazione FUSC. Di Prospex."
+  },
+  "actionTitle": {
+    "message": "Cerca nel registro di commercio"
+  },
+  "contextMenuTitle": {
+    "message": "Cerca «%s» nel registro di commercio"
+  },
+  "popupTitle": {
+    "message": "Registro di commercio svizzero"
+  },
+  "cardHeading": {
+    "message": "Registro di commercio svizzero"
+  },
+  "searchPlaceholder": {
+    "message": "Nome dell'azienda o IDI (CHE-123.456.789)"
+  },
+  "searchHint": {
+    "message": "Digita almeno 3 caratteri o incolla un numero IDI."
+  },
+  "loading": {
+    "message": "Consultazione del registro…"
+  },
+  "errorRegister": {
+    "message": "Il registro non ha risposto. Riprova tra un momento."
+  },
+  "noResults": {
+    "message": "Nessuna azienda corrispondente nel registro di commercio."
+  },
+  "notFoundUid": {
+    "message": "Questo numero IDI non figura nel registro di commercio. Può appartenere a un ente iscritto solo nel registro IDI (piccole ditte individuali, associazioni, enti pubblici)."
+  },
+  "moreResults": {
+    "message": "Altre aziende corrispondono. Aggiungi una parola o la località per restringere."
+  },
+  "backToResults": {
+    "message": "Torna ai risultati"
+  },
+  "statusActive": {
+    "message": "Attiva"
+  },
+  "statusLiquidation": {
+    "message": "In liquidazione"
+  },
+  "statusDeleted": {
+    "message": "Cancellata"
+  },
+  "labelLegalForm": {
+    "message": "Forma giuridica"
+  },
+  "labelSeat": {
+    "message": "Sede"
+  },
+  "labelDeleted": {
+    "message": "Cancellata il"
+  },
+  "labelLatestPublication": {
+    "message": "Ultima pubblicazione FUSC"
+  },
+  "linkProspex": {
+    "message": "Profilo completo su Prospex"
+  },
+  "linkExcerpt": {
+    "message": "Estratto del registro cantonale"
+  },
+  "copyUid": {
+    "message": "Copia IDI"
+  },
+  "copied": {
+    "message": "Copiato"
+  },
+  "close": {
+    "message": "Chiudi"
+  },
+  "dataSource": {
+    "message": "Dati da Zefix e FUSC. Questa scheda non è un estratto ufficiale del registro."
+  },
+  "highlightToggle": {
+    "message": "Sottolineare i numeri IDI nelle pagine web e mostrare la scheda al passaggio del mouse"
+  },
+  "footerBrand": {
+    "message": "Dati sulle aziende svizzere di Prospex"
+  },
+  "mut_status": {
+    "message": "Mutazione nel registro"
+  },
+  "mut_status_neu": {
+    "message": "Nuova iscrizione"
+  },
+  "mut_status_aufl": {
+    "message": "Scioglimento"
+  },
+  "mut_status_aufl_liq": {
+    "message": "Liquidazione"
+  },
+  "mut_status_aufl_konk": {
+    "message": "Fallimento"
+  },
+  "mut_status_wiederrufliq": {
+    "message": "Revoca dello scioglimento"
+  },
+  "mut_status_loeschung": {
+    "message": "Cancellazione"
+  },
+  "mut_firmenaenderung": {
+    "message": "Modifica della ragione sociale"
+  },
+  "mut_zweckaenderung": {
+    "message": "Modifica dello scopo"
+  },
+  "mut_kapitalaenderung": {
+    "message": "Modifica del capitale"
+  },
+  "mut_adressaenderung": {
+    "message": "Cambiamento d'indirizzo"
+  },
+  "mut_aenderungorgane": {
+    "message": "Modifica degli organi"
+  },
+  "mut_aenderunguid": {
+    "message": "Modifica dell'IDI"
+  },
+  "mut_fusion": {
+    "message": "Fusione"
+  },
+  "mut_spaltung": {
+    "message": "Scissione"
+  },
+  "mut_vermoegenstransfer": {
+    "message": "Trasferimento di patrimonio"
+  },
+  "mut_aenderungkapitalband": {
+    "message": "Modifica del margine di variazione del capitale"
+  }
+}

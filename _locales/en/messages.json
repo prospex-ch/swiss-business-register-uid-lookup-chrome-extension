@@ -1,0 +1,147 @@
+{
+  "langCode": {
+    "message": "en",
+    "description": "The language of this bundle. Card dates and legal forms follow it."
+  },
+  "appName": {
+    "message": "Swiss Business Register – UID Lookup by Prospex"
+  },
+  "appShortName": {
+    "message": "Swiss UID Lookup"
+  },
+  "appDescription": {
+    "message": "Look up any Swiss company by UID (CHE-123.456.789) or name: status, legal form, canton, latest SHAB publication. By Prospex."
+  },
+  "actionTitle": {
+    "message": "Search the Swiss commercial register"
+  },
+  "contextMenuTitle": {
+    "message": "Look up “%s” in the Swiss commercial register"
+  },
+  "popupTitle": {
+    "message": "Swiss commercial register"
+  },
+  "cardHeading": {
+    "message": "Swiss commercial register"
+  },
+  "searchPlaceholder": {
+    "message": "Company name or UID (CHE-123.456.789)"
+  },
+  "searchHint": {
+    "message": "Type at least 3 characters, or paste a UID."
+  },
+  "loading": {
+    "message": "Looking up the register…"
+  },
+  "errorRegister": {
+    "message": "The register did not answer. Try again in a moment."
+  },
+  "noResults": {
+    "message": "No matching company in the commercial register."
+  },
+  "notFoundUid": {
+    "message": "This UID is not in the commercial register. It may belong to an entity listed only in the UID register (sole traders below the threshold, associations, public bodies)."
+  },
+  "moreResults": {
+    "message": "More companies match. Add a word or the town to narrow it down."
+  },
+  "backToResults": {
+    "message": "Back to results"
+  },
+  "statusActive": {
+    "message": "Active"
+  },
+  "statusLiquidation": {
+    "message": "In liquidation"
+  },
+  "statusDeleted": {
+    "message": "Deleted"
+  },
+  "labelLegalForm": {
+    "message": "Legal form"
+  },
+  "labelSeat": {
+    "message": "Registered office"
+  },
+  "labelDeleted": {
+    "message": "Deleted on"
+  },
+  "labelLatestPublication": {
+    "message": "Latest SHAB publication"
+  },
+  "linkProspex": {
+    "message": "Full profile on Prospex"
+  },
+  "linkExcerpt": {
+    "message": "Cantonal register excerpt"
+  },
+  "copyUid": {
+    "message": "Copy UID"
+  },
+  "copied": {
+    "message": "Copied"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "dataSource": {
+    "message": "Data from Zefix and SHAB. This card is not an official register excerpt."
+  },
+  "highlightToggle": {
+    "message": "Underline UIDs on web pages and show the card on hover"
+  },
+  "footerBrand": {
+    "message": "Swiss company data by Prospex"
+  },
+  "mut_status": {
+    "message": "Register change"
+  },
+  "mut_status_neu": {
+    "message": "New registration"
+  },
+  "mut_status_aufl": {
+    "message": "Dissolution"
+  },
+  "mut_status_aufl_liq": {
+    "message": "Liquidation"
+  },
+  "mut_status_aufl_konk": {
+    "message": "Bankruptcy"
+  },
+  "mut_status_wiederrufliq": {
+    "message": "Dissolution revoked"
+  },
+  "mut_status_loeschung": {
+    "message": "Deletion"
+  },
+  "mut_firmenaenderung": {
+    "message": "Name change"
+  },
+  "mut_zweckaenderung": {
+    "message": "Purpose change"
+  },
+  "mut_kapitalaenderung": {
+    "message": "Capital change"
+  },
+  "mut_adressaenderung": {
+    "message": "Address change"
+  },
+  "mut_aenderungorgane": {
+    "message": "Change of officers"
+  },
+  "mut_aenderunguid": {
+    "message": "UID change"
+  },
+  "mut_fusion": {
+    "message": "Merger"
+  },
+  "mut_spaltung": {
+    "message": "Demerger"
+  },
+  "mut_vermoegenstransfer": {
+    "message": "Transfer of assets"
+  },
+  "mut_aenderungkapitalband": {
+    "message": "Capital band change"
+  }
+}

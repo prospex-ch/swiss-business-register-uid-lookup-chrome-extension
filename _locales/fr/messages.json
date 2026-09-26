@@ -1,0 +1,147 @@
+{
+  "langCode": {
+    "message": "fr",
+    "description": "The language of this bundle. Card dates and legal forms follow it."
+  },
+  "appName": {
+    "message": "Registre du commerce suisse – Recherche IDE"
+  },
+  "appShortName": {
+    "message": "Recherche IDE"
+  },
+  "appDescription": {
+    "message": "Trouvez une entreprise suisse par numéro IDE ou par nom : statut, forme juridique, canton et dernière publication FOSC. Par Prospex."
+  },
+  "actionTitle": {
+    "message": "Rechercher dans le registre du commerce"
+  },
+  "contextMenuTitle": {
+    "message": "Rechercher « %s » dans le registre du commerce"
+  },
+  "popupTitle": {
+    "message": "Registre du commerce suisse"
+  },
+  "cardHeading": {
+    "message": "Registre du commerce suisse"
+  },
+  "searchPlaceholder": {
+    "message": "Nom de l'entreprise ou IDE (CHE-123.456.789)"
+  },
+  "searchHint": {
+    "message": "Saisissez au moins 3 caractères ou collez un numéro IDE."
+  },
+  "loading": {
+    "message": "Consultation du registre…"
+  },
+  "errorRegister": {
+    "message": "Le registre n'a pas répondu. Réessayez dans un instant."
+  },
+  "noResults": {
+    "message": "Aucune entreprise correspondante dans le registre du commerce."
+  },
+  "notFoundUid": {
+    "message": "Ce numéro IDE ne figure pas au registre du commerce. Il peut appartenir à une entité inscrite seulement au registre IDE (petites entreprises individuelles, associations, collectivités publiques)."
+  },
+  "moreResults": {
+    "message": "D'autres entreprises correspondent. Ajoutez un mot ou la localité pour affiner."
+  },
+  "backToResults": {
+    "message": "Retour aux résultats"
+  },
+  "statusActive": {
+    "message": "Active"
+  },
+  "statusLiquidation": {
+    "message": "En liquidation"
+  },
+  "statusDeleted": {
+    "message": "Radiée"
+  },
+  "labelLegalForm": {
+    "message": "Forme juridique"
+  },
+  "labelSeat": {
+    "message": "Siège"
+  },
+  "labelDeleted": {
+    "message": "Radiée le"
+  },
+  "labelLatestPublication": {
+    "message": "Dernière publication FOSC"
+  },
+  "linkProspex": {
+    "message": "Profil complet sur Prospex"
+  },
+  "linkExcerpt": {
+    "message": "Extrait du registre cantonal"
+  },
+  "copyUid": {
+    "message": "Copier l'IDE"
+  },
+  "copied": {
+    "message": "Copié"
+  },
+  "close": {
+    "message": "Fermer"
+  },
+  "dataSource": {
+    "message": "Données issues de Zefix et de la FOSC. Cette fiche n'est pas un extrait officiel du registre."
+  },
+  "highlightToggle": {
+    "message": "Souligner les numéros IDE sur les pages web et afficher la fiche au survol"
+  },
+  "footerBrand": {
+    "message": "Données d'entreprises suisses par Prospex"
+  },
+  "mut_status": {
+    "message": "Mutation au registre"
+  },
+  "mut_status_neu": {
+    "message": "Nouvelle inscription"
+  },
+  "mut_status_aufl": {
+    "message": "Dissolution"
+  },
+  "mut_status_aufl_liq": {
+    "message": "Liquidation"
+  },
+  "mut_status_aufl_konk": {
+    "message": "Faillite"
+  },
+  "mut_status_wiederrufliq": {
+    "message": "Révocation de la dissolution"
+  },
+  "mut_status_loeschung": {
+    "message": "Radiation"
+  },
+  "mut_firmenaenderung": {
+    "message": "Changement de raison sociale"
+  },
+  "mut_zweckaenderung": {
+    "message": "Modification du but"
+  },
+  "mut_kapitalaenderung": {
+    "message": "Modification du capital"
+  },
+  "mut_adressaenderung": {
+    "message": "Changement d'adresse"
+  },
+  "mut_aenderungorgane": {
+    "message": "Mutation des organes"
+  },
+  "mut_aenderunguid": {
+    "message": "Modification de l'IDE"
+  },
+  "mut_fusion": {
+    "message": "Fusion"
+  },
+  "mut_spaltung": {
+    "message": "Scission"
+  },
+  "mut_vermoegenstransfer": {
+    "message": "Transfert de patrimoine"
+  },
+  "mut_aenderungkapitalband": {
+    "message": "Modification de la marge de fluctuation du capital"
+  }
+}

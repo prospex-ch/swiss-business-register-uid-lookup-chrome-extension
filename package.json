@@ -1,0 +1,12 @@
+{
+  "name": "swiss-business-register-uid-lookup-chrome-extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome extension: look up Swiss companies by UID or name in the commercial register (Zefix, SHAB). By Prospex.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test tests/",
+    "test:live": "LIVE=1 node --test tests/",
+    "zip": "./scripts/build-zip.sh"
+  }
+}
