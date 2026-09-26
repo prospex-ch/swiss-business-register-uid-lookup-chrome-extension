@@ -12,6 +12,7 @@
   const MAX_NODES_PER_PASS = 4000;
 
   let enabled = true;
+  let retired = false;
   let observer = null;
   let pending = new Set();
   let scheduled = false;
@@ -70,6 +71,7 @@
 
   function flush() {
     scheduled = false;
+    if (!alive()) return;
     const roots = [...pending];
     pending = new Set();
     roots.forEach((n) => n.isConnected && scan(n));
@@ -102,6 +104,34 @@
     observer = null;
     document.querySelectorAll(`.${MARK_CLASS}`).forEach((m) => m.replaceWith(document.createTextNode(m.textContent)));
     document.body.normalize();
+  }
+
+  // -------------------------------------------------------------- lifecycle
+
+  // After the extension is reloaded or updated, the copy of this script on
+  // pages that were already open loses its connection: every chrome.* call
+  // throws "Extension context invalidated". Chrome does not re-inject open
+  // tabs, so this copy removes its underlines and card and goes quiet until
+  // the page is reloaded.
+  function alive() {
+    if (retired) return false;
+    try {
+      if (chrome.runtime?.id) return true;
+    } catch (_) {
+      /* invalidated */
+    }
+    retire();
+    return false;
+  }
+
+  function retire() {
+    if (retired) return;
+    retired = true;
+    enabled = false;
+    hide();
+    host?.remove();
+    stopMarking();
+    document.getElementById("sbr-mark-style")?.remove();
   }
 
   // ------------------------------------------------------------------- card
@@ -172,26 +202,28 @@
   }
 
   async function ask(message) {
+    if (!alive()) return null;
     try {
       return (await chrome.runtime.sendMessage(message)) || { kind: "error" };
     } catch (_) {
-      // The extension was reloaded or updated while this page stayed open.
-      return { kind: "error" };
+      return alive() ? { kind: "error" } : null;
     }
   }
 
   async function load(query, rect, opts) {
+    if (!alive()) return;
     const seq = ++requestSeq;
     show({ kind: "loading" }, rect, opts);
     const state = await ask({ type: "lookup", query });
-    if (seq === requestSeq) show(state, rect, opts);
+    if (state && seq === requestSeq) show(state, rect, opts);
   }
 
   async function loadCompany(ehraid, rect, opts) {
+    if (!alive()) return;
     const seq = ++requestSeq;
     show({ kind: "loading" }, rect, opts);
     const state = await ask({ type: "company", ehraid });
-    if (seq === requestSeq) show(state, rect, opts);
+    if (state && seq === requestSeq) show(state, rect, opts);
   }
 
   // ------------------------------------------------------------------ hover
@@ -200,7 +232,7 @@
     "mouseover",
     (e) => {
       const mark = e.target instanceof Element ? e.target.closest(`.${MARK_CLASS}`) : null;
-      if (!mark) return;
+      if (!mark || !alive()) return;
       clearTimeout(hideTimer);
       if (mark === currentAnchor) return;
       clearTimeout(showTimer);

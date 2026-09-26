@@ -6,17 +6,27 @@
 
   const LANGS = ["en", "de", "fr", "it"];
 
+  // chrome.* throws "Extension context invalidated" in a content script left
+  // behind on an open page after the extension was reloaded or updated.
+  function safe(fn) {
+    try {
+      return fn();
+    } catch (_) {
+      return undefined;
+    }
+  }
+
   // The language of the message bundle Chrome picked, so dates and legal
   // forms match the labels around them.
   function uiLanguage() {
-    const bundle = root.chrome?.i18n?.getMessage?.("langCode");
+    const bundle = safe(() => root.chrome?.i18n?.getMessage?.("langCode"));
     if (LANGS.includes(bundle)) return bundle;
-    const raw = (root.chrome?.i18n?.getUILanguage?.() || root.navigator?.language || "en").slice(0, 2).toLowerCase();
+    const raw = (safe(() => root.chrome?.i18n?.getUILanguage?.()) || root.navigator?.language || "en").slice(0, 2).toLowerCase();
     return LANGS.includes(raw) ? raw : "en";
   }
 
   function defaultT(key, subs) {
-    return root.chrome?.i18n?.getMessage?.(key, subs) || key;
+    return safe(() => root.chrome?.i18n?.getMessage?.(key, subs)) || key;
   }
 
   function el(tag, attrs, ...children) {
