@@ -136,7 +136,10 @@
     const h = card.offsetHeight || 200;
     let left = Math.min(Math.max(margin, rect.left), window.innerWidth - w - margin);
     let top = rect.bottom + 6;
-    if (top + h > window.innerHeight - margin && rect.top - h - 6 > margin) top = rect.top - h - 6;
+    if (top + h > window.innerHeight - margin) {
+      // Above the anchor if it fits there, else as low as the window allows.
+      top = rect.top - h - 6 > margin ? rect.top - h - 6 : window.innerHeight - h - margin;
+    }
     host.style.left = `${Math.max(margin, left)}px`;
     host.style.top = `${Math.max(margin, top)}px`;
   }

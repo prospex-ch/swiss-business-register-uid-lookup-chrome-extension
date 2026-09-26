@@ -217,8 +217,9 @@
     border: 1px solid var(--sbr-rule); border-radius: 10px;
     box-shadow: 0 8px 28px rgba(27, 26, 32, .18);
     padding: 12px 14px; text-align: left;
+    max-height: calc(100vh - 16px); overflow-y: auto; overscroll-behavior: contain;
   }
-  .sbr-card.sbr-bare { width: auto; max-width: none; border: 0; box-shadow: none; border-radius: 0; padding: 0; background: transparent; }
+  .sbr-card.sbr-bare { width: auto; max-width: none; max-height: none; overflow: visible; border: 0; box-shadow: none; border-radius: 0; padding: 0; background: transparent; }
   @media (prefers-color-scheme: dark) {
     .sbr-card {
       --sbr-paper: #1F1E24; --sbr-ink: #EFEEEA; --sbr-ink-soft: #D2D0D8; --sbr-ink-faint: #A09DAA;

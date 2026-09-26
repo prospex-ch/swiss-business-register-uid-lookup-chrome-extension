@@ -2,6 +2,11 @@
 
 Name and short description come from `_locales/*/messages.json` (`appName`, `appDescription`). The long descriptions below go into the Developer Dashboard, one per language. Category: Productivity (alternative: Tools). Privacy policy URL: the GitHub URL of `PRIVACY.md`.
 
+Graphic assets in `store/assets/`:
+- Screenshots (1280×800): `screenshot-<lang>-1.png` (hover card), `-2` (right-click matches), `-3` (toolbar search). Upload the `en` set to the default listing and the `de`/`fr` sets to those localized listings; the `it` listing falls back to the English ones.
+- Small promo tile (440×280): `promo-small-440x280.png`.
+- Store icon: taken from the package (`icons/icon-128.png`).
+
 Single purpose statement: *Look up Swiss companies in the commercial register by UID or name.*
 
 Permission justifications:
