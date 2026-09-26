@@ -24,7 +24,6 @@
     "service_worker": "src/background.js"
   },
   "permissions": ["contextMenus", "storage"],
-  "host_permissions": ["https://www.zefix.admin.ch/*"],
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],

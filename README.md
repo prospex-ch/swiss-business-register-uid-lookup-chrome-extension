@@ -54,8 +54,9 @@ Zefix returns HTTP 500 to the `HeadlessChrome` user agent, so headless browser t
 |---|---|
 | `contextMenus` | the right-click lookup |
 | `storage` | the highlight toggle (sync) and a one-hour lookup cache (session) |
-| `https://www.zefix.admin.ch/*` | register lookups |
 | content script on `http(s)://*/*` | finding UIDs on pages; nothing leaves the page unless a UID is hovered or a lookup is requested |
+
+Register lookups need no host permission: the Zefix API sends `Access-Control-Allow-Origin: *`.
 
 See [PRIVACY.md](PRIVACY.md).
 

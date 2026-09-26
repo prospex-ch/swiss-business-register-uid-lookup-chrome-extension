@@ -12,7 +12,6 @@ Single purpose statement: *Look up Swiss companies in the commercial register by
 Permission justifications:
 - `contextMenus`: right-click "Look up in the Swiss commercial register" on selected text.
 - `storage`: saves the highlight setting and caches lookups for one hour.
-- Host `www.zefix.admin.ch`: fetches register entries from the public Zefix API.
 - Content script on all sites: finds Swiss UIDs in page text to show the company card on hover. Page content stays in the browser.
 
 ---
