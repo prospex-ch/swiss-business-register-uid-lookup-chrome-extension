@@ -46,6 +46,9 @@ test("status mapping", () => {
 test("fixEncoding leaves clean text alone", () => {
   assert.equal(zefix.fixEncoding("Zürich Société"), "Zürich Société");
   assert.equal(zefix.fixEncoding("ZÃ¼rich"), "Zürich");
+  assert.equal(zefix.fixEncoding("Fusion: Ãœbernahme der Aktiven, gemÃ¤ss Vertrag, in ZÃ¼rich"), "Fusion: Übernahme der Aktiven, gemäss Vertrag, in Zürich");
+  assert.equal(zefix.fixEncoding("SociÃ©tÃ© Ã  responsabilitÃ© limitÃ©e"), "Société à responsabilité limitée");
+  assert.equal(zefix.fixEncoding("Â« Ã‰tude Â»"), "« Étude »");
 });
 
 test("byUid prefers the active registration and loads its detail", async () => {
